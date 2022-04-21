@@ -1,0 +1,109 @@
+.dp-section-price-price{
+	background: #fff;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+	border-left: 15px solid #628FAF;
+	border-right: 15px solid #628FAF;
+
+	@include breakpoint(large){
+		padding: 170px 0 35px;
+	}
+
+	.dp-price-table{
+		
+		@include breakpoint(large){
+			display: flex;
+			justify-content: center;
+			z-index: 3;
+			position: relative;
+
+			.dp-column + .dp-column{
+				margin-left: 35px;
+			}
+		}
+
+		.dp-column + .dp-column{
+			margin-top: 20px;
+		}
+
+		.dp-column{
+			width: 100%;
+			background: #fff;
+			color: #000;
+			padding: 22px 37px;
+			border: 2px solid #000;
+			position: relative;
+			box-sizing: border-box;
+
+			@include breakpoint(large){
+				width: 306px;
+				background: #fff;
+				color: #000;
+				padding: 22px 37px;
+				border: 2px solid #000;
+
+				&__center{
+					&::before, &::after{
+						display: none;
+					}
+				}
+			}
+
+			.dp-title{
+				font-family: 'Schnyder L';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 56px;
+				line-height: 1.2;
+				letter-spacing: 0.035em;
+				color: #000000;
+				text-align: center;
+			}
+
+			.dp-description{
+				font-family: 'Technique Sans';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 1.2;
+				text-align: center;
+				color: #000000;
+				margin: 18px 0 35px;
+			}
+
+			.dp-services{
+				list-style: none;
+
+				li{
+					font-family: Technique Sans;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 1.2;
+					color: #000000;
+
+					.dp-red{
+						color:#12A62B;
+						font-weight: 600;
+					}
+				}
+
+				li+li{
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	.dp-subtitle{
+		font-family: 'Technique Sans';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 1.2;
+		color: #000000;
+		opacity: 0.7;
+		margin-top: 65px;
+	}
+}

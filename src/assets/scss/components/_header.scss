@@ -1,0 +1,41 @@
+.dp-header{
+	background-color: #fff;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include breakpoint(large){
+		padding: 0;
+	}
+
+	.dp-logo{
+		width: 116px;
+		height: 25.65px;
+
+		@include breakpoint(large){
+			width: 208px;
+			height: 74px;
+		}
+	}
+
+	.dp-main-menu{
+		margin: auto 15px;
+		
+		li{
+			a{
+				font-family: 'Technique Sans';
+				color: #000000;
+				font-size: 22px;
+
+				&:hover{
+					color: #628FAF;
+				}
+			}
+		}
+
+		li + li{
+			margin-left: 80px; 
+		}
+	}
+}

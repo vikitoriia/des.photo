@@ -1,0 +1,102 @@
+.dp-section-about-intro{
+	padding: 0 0 68px;
+	background: #fff;
+	position: relative;
+	z-index: 10;
+
+	.dp-photographer-img{
+		position: relative;
+		width: 350px;
+		height: 470px;
+		margin: 0 auto;
+
+		@include breakpoint(large){
+			width: 500px;
+			height: 800px;
+
+			&::after{
+				content: "";
+				display: block;
+				background: #628FAF;
+				width: 1062px;
+				height: 51px;			
+				position: absolute;
+				top: 560px;
+				left: -100px;
+				z-index: -2;
+			}
+			
+		}
+
+	}
+
+	.dp-title{
+		font-family: 'Schnyder L';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 48px;
+		line-height: 0.8;
+		letter-spacing: 0.035em;
+		color: #000;
+		margin-top: 68px;
+
+		&__color{
+			color: #628FAF;
+		}
+	}
+
+	.dp-title-small{
+		font-family: 'Schnyder L';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 96px;
+		line-height: 1;
+		text-align: center;
+		letter-spacing: 0.035em;
+		color: #000000;
+		margin: 0;
+
+		&__color{
+			color: #628FAF;
+			position: absolute;
+			top: 50px;
+			right: 50%;
+			transform: translateX(50%);
+			z-index: 4;
+		}
+	}
+
+	.dp-name{
+		font-family: 'Schnyder L';
+		font-style: italic;
+		font-weight: 600;
+		font-size: 96px;
+		letter-spacing: 0.035em;
+		color: #000000;
+
+		position: absolute;
+		top: 300px;
+	}
+
+	.dp-description{
+		margin-top: 80px;
+
+		@include breakpoint(large){
+			margin-top: 40px;
+		}
+
+		p{
+			font-family: 'Technique Sans';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 1;
+			letter-spacing: -0.045em;
+			color: #000000;
+		}
+
+		p+p{
+			margin-top: 50px;
+		}
+	}
+}

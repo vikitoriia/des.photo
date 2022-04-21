@@ -1,0 +1,22 @@
+<header class="dp-header-wrap">    
+    <div class="dp-header" id="header">
+		<ul class="menu dp-main-menu show-for-medium">
+			<li {{#ifpage 'about'}} class="active" {{/ifpage}}><a href="about.html">ABOUT ME</a></li>
+			<li {{#ifpage 'price'}} class="active" {{/ifpage}}><a href="price.html">PRICE LIST</a></li>
+		</ul>
+		
+		<a href="index.html" class="dp-logo">
+			<img src="{{root}}assets/img/logo.svg" alt="DES.PHOTO">
+		</a>
+		
+		<div>
+			<ul class="menu dp-main-menu show-for-medium">
+				<li {{#ifpage 'portfolio'}} class="active" {{/ifpage}}><a href="portfolio.html">PORTFOLIO</a></li>
+				<li {{#ifpage 'contact'}} class="active" {{/ifpage}}><a href="contact.html">CONTACT ME </a></li>
+			</ul>
+		</div>
+
+		<button class="menu menu-icon dark hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu">
+		</button>
+    </div>
+</header>

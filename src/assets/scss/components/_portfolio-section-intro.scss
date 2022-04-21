@@ -1,0 +1,46 @@
+.dp-section-intro-gallery{ 
+	padding: 15px 0 50px;
+	background: #fff;
+
+	@include breakpoint(large){
+		padding: 15px 0;
+		background: #fff url(../img/contact-intro.JPG) no-repeat 100% 60%;
+	}
+
+	.dp-title{
+		font-family: 'Technique Sans';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 100px;
+		line-height: 1;
+		letter-spacing: 0.02em;
+		color: #628FAF;
+	}
+
+	.dp-title-small{
+		font-family: 'Schnyder L';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 90px;
+		line-height: 1;
+		text-align: center;
+		letter-spacing: 0.035em;
+		color: #000000;
+		margin: 0;
+
+		&__color{
+			font-family: 'Schnyder L';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 90px;
+			line-height: 1;
+			letter-spacing: 0.035em;
+			color: #628FAF;
+			position: absolute;
+			top: 130px;
+			right: 50%;
+			transform: translateX(50%);
+			z-index: 4;
+		}
+	}
+}

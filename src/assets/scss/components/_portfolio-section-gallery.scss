@@ -1,0 +1,159 @@
+.dp-section-gallery{
+	background: #fff;
+	padding: 40px 0 0px;
+	position: relative;
+	z-index: -3;
+
+	&::before{
+		content: "";
+		display: block;
+		background: #628FAF;
+		width: 190px;
+		height: 100%;
+		position: absolute;
+		top: -15px;
+		right: 50%;
+		transform: translateX(50%);
+		z-index: -2;
+	}
+
+	@include breakpoint(large){
+		padding: 200px 0 0px;
+	}
+
+	.dp-title{
+		font-family: Schnyder L;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 1;
+		letter-spacing: 0.035em;
+		text-align: center;	
+		color: #000000;
+	}
+
+	.dp-img{
+		&__decor{
+			position: relative;
+
+			@include breakpoint(large){
+				&::after{
+					content: "";
+					height: 202px;
+					width: 39px;
+					background: #628FAF;
+					display: block;
+					position: absolute;
+					top: 400px;
+					right: 68px;
+				}
+			}
+		}
+
+
+		.dp-img-size-small{
+			width: 412px;
+			height: 563px;
+
+			@include breakpoint(large){
+				width: 380px;
+				height: 570px;
+			}
+		}
+
+		.dp-info{
+			display: flex;
+			align-items: center;
+			margin: 15px 0 40px;
+
+			@include breakpoint(large){
+				margin: 0;
+			}
+
+			.dp-number{
+				font-family: 'Technique Sans';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 1;
+				color: #000000;
+			}
+
+			.dp-seria-name{
+				font-family: Schnyder L;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 42px;
+				line-height: 1;
+				letter-spacing: 0.035em;
+				color: #000000;
+				margin-left: 22px;
+			}
+		}
+	}
+
+	.dp-img--big{
+		&__up{
+
+			@include breakpoint(large){
+				transform: translateY(-103px);
+			}
+		}
+
+		.dp-img-size-big{
+			width: 412px;
+			height: 749px;
+			margin-bottom: 14px;
+
+			@include breakpoint(large){
+				width: 583px;
+				height: 874px;
+				margin-bottom: 14px;
+			}
+		}
+
+		.dp-info{
+			display: flex;
+			align-items: center;
+			margin: 15px 0 40px;
+
+			@include breakpoint(large){
+				margin: 0;
+			}
+
+			.dp-model-name{
+				font-family: 'Technique Sans';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 0.8;
+				color: #000000;
+				margin-right: 77px;
+			}
+
+			.dp-date{
+				font-family: 'Technique Sans';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 0.8;
+				color: #000000;
+			}
+
+			.dp-number{
+				font-family: 'Schnyder L';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 46px;
+				line-height: 0.8;
+				letter-spacing: 0.035em;
+				color: #000000;
+				transform: translateX(100px);
+
+				@include breakpoint(large){
+					transform: translateX(310px);
+				}
+			}
+		}
+	}
+}

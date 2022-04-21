@@ -1,0 +1,262 @@
+.dp-section-contact{
+	background: #fff;
+	padding: 25px 0 100px;
+	position: relative;
+	z-index: 1;
+
+	.dp-title{
+		font-family: Technique Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		color: #000;
+		margin-bottom: 70px;
+
+		.dp-mail{
+			color: #628FAF;
+
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+
+		@include breakpoint(large){
+			font-size: 90px;
+		}
+	}
+
+	.dp-description{
+		font-family: 'Schnyder L';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 38px;
+		line-height: 1.2;
+		text-align: center;
+		letter-spacing: 0.035em;
+		color: #000000;
+		margin-bottom: 50px;
+
+		@include breakpoint(large){
+			font-size: 42px;
+		}
+	}
+
+	.dp-contact-form{
+		margin-left: 10px;
+
+		.dp-contact-input{
+			width: 351px;
+
+			@include breakpoint(large){
+				width: 450px; 
+			}
+
+			label{
+				font-family: 'GT Walsheim Pro';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 1.2;
+				letter-spacing: 0.035em;
+				color: #000000;
+				opacity: 0.6;
+				margin-bottom: 5px;
+			}
+			
+			input[type='text']{
+				padding: 20px 0 20px 20px;
+				border: 2px solid #000;
+				font-family: 'GT Walsheim Pro';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 28px;
+				line-height: 1.2;
+				letter-spacing: 0.035em;
+				color: #000000;
+				margin-bottom: 40px;
+
+				@include breakpoint(large){
+					
+				}
+			}
+		}
+
+		.dp-textarea{
+			width: 351px;
+
+			@include breakpoint(large){
+				width: 963px;
+			}
+
+			label{
+				font-family: 'GT Walsheim Pro';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 1.2;
+				letter-spacing: 0.035em;
+				color: #000000;
+				opacity: 0.6;
+				margin-bottom: 5px;
+			}
+
+			textarea{
+				padding: 20px 0 20px 20px;
+				border: 2px solid #000;
+				font-family: 'GT Walsheim Pro';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 28px;
+				line-height: 1.2;
+				letter-spacing: 0.035em;
+				color: #000000;
+				margin-bottom: 10px;
+				min-height: 207px;
+				
+				@include breakpoint(large){
+					min-height: 235px;
+					margin-bottom: 40px;
+				}
+			}
+		}
+
+		.dp-contact{
+			position: relative;
+
+			@include breakpoint(large){
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+	
+			}
+
+			.dp-call{
+				transform: translateX(-26px);
+
+				&:hover{
+					label{
+						color: #628FAF;
+					}
+				}
+
+				input[type='checkbox']{
+					opacity: 0;
+				}
+
+				label{
+					font-family: 'GT Walsheim Pro';
+					font-style: normal;
+					font-weight: normal;
+					font-size: 22px;
+					line-height: 1;
+					letter-spacing: 0.035em;
+					color: #000000;
+					position: relative;
+					display: inline-block;
+
+					&::before{
+						content: "";
+						display: inline-block;
+						height: 40px;
+						width: 40px;
+						border: 4px solid #000;  
+						margin: 30px 20px auto 0;
+						position: relative;
+						top: 11px;
+					}
+
+					&::after {
+						content: "";
+						display: inline-block;
+						height: 15px;
+						width: 25px;
+						border-left: 4px solid #000;
+						border-bottom: 4px solid #000;
+						transform: rotate(-45deg);
+						position: absolute;
+						left: 8px;
+    					top: 48px;
+					}	
+				}
+
+				input[type='checkbox'] + label::after{
+					content: none;
+				}
+
+				input[type='checkbox']:checked + label::after {
+					content: "";
+			  }
+			}
+
+			.dp-send{
+				position: absolute;
+				top: 100px;
+				right: 50%;
+				transform: translateX(50%);
+
+				@include breakpoint(large){
+					position: relative;
+					top: 20px;
+					right: 30px;
+				}
+
+				.dp-button__send{
+					font-family: 'Technique Sans';
+					font-style: normal;
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 1.2;
+					text-align: center;
+					color: #628FAF;
+					border: 4px solid #628FAF;
+					box-sizing: border-box;
+					padding: 20px 90px;
+
+					&:hover{
+						background: #628FAF;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.dp-about{
+		margin-top: 230px;
+		position: relative;
+
+		p{
+			font-family: Schnyder L;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 68px;
+			line-height: 77px;
+			text-align: justify;
+			letter-spacing: 0.035em;
+			text-transform: uppercase;
+			color: #000000;
+			position: relative;
+
+			&::after{
+				content: "";
+				display: block;
+				width: 246px;
+				height: 154px;	
+				background: #628FAF;
+				position: absolute;
+				bottom: 10px;
+				right: 0;
+				z-index: -2;
+			}
+		}
+
+		.dp-img-description{
+			position: absolute;
+			top: -60px;
+			right: 220px;
+			height: 627px;
+		}
+	}
+}
